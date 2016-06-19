@@ -28,6 +28,10 @@ class Unit_UI_Tests_PlayUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testButtonClickDontFail(){
+        XCUIApplication().buttons["First Button"].tap()        
+    }
+    
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
